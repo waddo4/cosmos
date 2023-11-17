@@ -16,15 +16,17 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "prettier/prettier": [
-			"error",
-			{
-				"singleQuote": true,
-        "semi": true,
-        "trailingComma": "none",
-				"endOfLine": "auto",
-				"tabWidth": 2,
-				"printWidth": 80
-			}
-		]
+      "error",
+      {
+        semi: true,
+        trailingComma: "es5",
+        endOfLine: "lf",
+        tabWidth: 2,
+        printWidth: 120,
+        bracketSpacing: true,
+        bracketSameLine: false,
+        vueIndentScriptAndStyle: true,
+      },
+    ],
   },
 };
